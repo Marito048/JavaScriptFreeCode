@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>ArraysJavaScript</title>
+  </head>
+  
+    
+  <body>
+    <script>
+      //Arrays -Arreglos-
+      var miArreglo=["Jhon", 24];
+      console.log(miArreglo);
+      var estudiantes=["Nora", "Gino", "Emily", "Juan"];
+      console.log(estudiantes);
+      
+      //Arreglos anidados
+      var listaDeEstudiantes=[["Nora", 97], ["Gino", 78]];
+      console.log(listaDeEstudiantes);
+      var listaDePrecios=[["Camisa", 5.67, "S134"],["Celular", 250, "S356"], ["Zapato", 36.7, "S678"]];
+      console.log(listaDePrecios);
+      miArreglo=[10, 20, 30];
+      /*
+      Arreglo:  [10, 20, 30]
+      Indice:     0   1   2
+      */
+     console.log(miArreglo[2]);
+     var suma=miArreglo[0] + miArreglo[1] + miArreglo[2];
+     console.log(suma); 
+     miArreglo[0] =  40; 
+     console.log(miArreglo);
+
+     miArreglo=[[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+     /* 
+     Array          [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+     idice:              0          1          2
+     indice Interno   0  1  2    0  1  2    0  1  2 
+     */
+    console.log(miArreglo[0][2]);
+    var estaciones= ["Invierno", "Otoño", "Primavera"];
+    estaciones.push("Verano"); //push añade al final del array
+    console.log(estaciones);
+    estaciones=["Invierno", "Otoño", "Primavera", "Verano"];
+    var estacion; 
+    estacion = estaciones.pop(); //pop elimina y retorna el elemento del final del arrays
+    console.log(estaciones);
+    console.log(estacion);
+    estaciones=["Invierno", "Otoño", "Primavera", "Verano"];
+    estaciones.shift(); //Shift Remueve el primer elemento del Array  
+    estaciones=["Invierno", "Otoño", "Primavera"];
+    console.log(estaciones);
+    estaciones.unshift("Verano"); //unshift agrega al principio del Array 
+    console.log(estaciones);
+
+    var miListaDeCompras = [["Ceral", 3], ["Leche", 2], ["galletas", 4], ["Pan", 5], ["Refresco", 7], ["Pollo", 7]];
+    console.log("Voy a comparar " + miListaDeCompras[0][1]+ " unidades de "+miListaDeCompras[0][0]);
+    console.log("Voy a comparar " + miListaDeCompras[1][1]+ " unidades de "+miListaDeCompras[1][0]);
+    console.log("Voy a comparar " + miListaDeCompras[2][1]+ " unidades de "+miListaDeCompras[2][0]);
+    console.log("Voy a comparar " + miListaDeCompras[3][1]+ " unidades de "+miListaDeCompras[3][0]);
+    console.log("Voy a comparar " + miListaDeCompras[4][1]+ " unidades de "+miListaDeCompras[4][0]);
+    console.log("Voy a comparar " + miListaDeCompras[5][1]+ " unidades de "+miListaDeCompras[5][0]);
+      
+    </script>
+
+
+
+  </body>
+
+</html>
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <title>FuncionesJvaScript</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+<body>
+  <script>
+    /*
+    function mostrarMensaje(){
+      console.log("¡Hola, Mundo!");
+    }
+    mostrarMensaje();
+    
+    function sumar(a, b){
+      var suma = a + b;
+      console.log("El resultado de "+ a + " + "+ b + " es igual a: " + suma);  
+
+    }
+    var x=11;
+    var y=25;
+
+    sumar(x, y);
+
+    //concatenar 
+    function concatenarTresCadenas(cadena1, cadena2, cadena3){
+      console.log(cadena1 + " " + cadena2 + " " + cadena3);
+
+    }
+    concatenarTresCadenas("Estoy", "aprendiendo", "a programar");
+
+    //variable global 
+    var miVariableGlobal= 5;
+    console.log(miVariableGlobal);
+
+    function miFuncion(){
+      console.log(miVariableGlobal);
+
+    }
+    miFuncion();
+    console.log(miVariableGlobal);
+
+    //variable local 
+    function miVAriableLocal(){
+      var variableLocal=4;
+      console.log(variableLocal);
+
+    }
+    miVAriableLocal();
+    //console.log(variableLocal); //no es variable global.
+
+    //Global vs Local
+    var miNombre="Nora";
+    function mostrarMiNombre(){
+      var miNombre="Gino";
+      console.log(miNombre);
+    }
+    mostrarMiNombre();
+    console.log(miNombre);
+
+    //Retornar Valores 
+    function sumando(a, b){
+      return a + b; 
+    }
+    console.log(sumando(5, 3));
+    
+   function sumar(a, b){
+     console.log(a + b);
+   }
+   console.log(sumar(5, 3)); //por defecto retorna undefined
+   */
+  function sumar(a, b){
+    return a + b;
+  }
+  var resultado = sumar (5, 3);
+  console.log(resultado);
+
+  function crearCadenaConMeta(lenguajeDeProgramacion){
+    return "Mi meta es aprender "+lenguajeDeProgramacion;
+  }
+  var miMeta = crearCadenaConMeta("JavaScript");
+  console.log (miMeta);
+
+  
+  //ejercicio que trabaja con cola, agrega al final un elemento del array y elimina el primer eleneto, retornado el elemento eliminado. Pasa como parametros el array, y el elemento a agregar..
+  var arreglo = [1, 2, 3, 4, 5, 6, 7];
+  function proximoEnLaFila(arreglo, numero){
+    arreglo.push(numero);
+    return arreglo.shift();
+    
+  }
+  console.log("Antes: " + JSON.stringify(arreglo));
+  console.log(proximoEnLaFila(arreglo, 8));
+  console.log("Despues: " + JSON.stringify(arreglo));
+  
+
+
+
+
+  
+
+
+   
+  
+
+
+
+
+        
+  </script>
+  
+</body>
+</html>
