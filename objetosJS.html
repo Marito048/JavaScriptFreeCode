@@ -1,25 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ObjetosJS</title>
-</head>
-<body>
-  <script>
-    //Definicion de Objetos
-    var miPerro={
-      "nombre":"Gino",
-      "edad": 5,
-      "peso":6,
-      "raza":"Beagle"
-    };
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObjetosJS</title>
+  </head>
+  <body>
+    <script>
+      /*
+      //Definicion de Objetos
+      var miPerro={
+        "nombre":"Gino",
+        "edad": 5,
+        "peso":6,
+        "raza":"Beagle"
+      };
 
-    //Notacion de Punto
-    console.log (miPerro.nombre);
+      //Notacion de Punto
+      console.log (miPerro.nombre);
+      console.log(miPerro.raza);
+
+      var miCuaderno={
+        "color": "verde",
+        "categoria": 3,
+        "numero de paginas": 200,
+        "numero de hojas": 100
+      };
+
+      //Notacion de Corchetes
+      console.log(miCuaderno["numero de paginas"]);
+      
+      var resultados ={
+        1: "nora256",
+        2: "gino577",
+        3: "estef543",
+        4: "kiara566"
+      };
+      var posicion=4;
+      console.log(resultados[posicion]);
+      console.log(miCuaderno.hasOwnProperty("color")); //true
+      console.log(miCuaderno.hasOwnProperty("calidad")) //false
+
+      //verificar si tiene esa propiedad
+      function verificarPropiedad(objeto, propiedad){
+        if(objeto.hasOwnProperty(propiedad)){
+          return "Propiedad: "+objeto[propiedad];
+        } else{
+          return "El objeto no tiene esta propiedad";
+        }
+      }
+      console.log(verificarPropiedad(miCuaderno, "color"));
+
+      var mochila = {
+        "color": "azul",
+        "tamaño": "mediano",
+        "contenido": ["botella de agua", "cuaderno"]
+      };
+      console.log(mochila.color);
+      mochila.color = "verde"; //Cambia el color a verde
+      console.log(mochila.color);
+      console.log(mochila.contenido);
+      mochila.contenido.push("lapiz"); //Agrega lapiz al final
+      console.log(mochila.contenido);
+
+      var curso = {
+        "titulo": "Aprende JavaScript desde cero",
+        "idioma": "español",
+        "duracion": 30
+      };
+      curso.vistas=34500; //Agrega una propiedad nueva llamada vistas
+      console.log(curso.vistas);
+      delete curso.vistas; //Borra la propiedad vistas
+      console.log(curso.vistas);
+      console.log(curso);
+
+      function buscarElementosQuimicos(simbolo){
+        var simbolosQuimicos= {
+          "Al": "Aluminio",
+          "S": "Azufre",
+          "Cl": "Cloro",
+          "He": "Helio",
+          "B": "Boro",
+          "Li": "Litio"
+        };
+        
+        return simbolosQuimicos[simbolo];
+        
+      }
+      
+      console.log(buscarElementosQuimicos("Al"));
+      console.log(buscarElementosQuimicos("S"));
+      console.log(buscarElementosQuimicos("Cl"));
+      console.log(buscarElementosQuimicos("He"));
+      console.log(buscarElementosQuimicos("B"));
+      console.log(buscarElementosQuimicos("Li"));
+      */
+      var ordenesDePizzas = 
+        [
+          {
+            "tipo": "margarita",
+            "tamaño": "individual",
+            "precio": 5.67,
+            "toppings": [
+              "extra queso", 
+              "champignones",
+              "piña"
+            ],
+            "parallevar": true 
+          },
+          {
+            "tipo": "cuatro quesos",
+            "tamaño": "familiar",
+            "precio": 18.34,
+            "toppings": [
+              "extra queso", 
+              "pimenton"
+            ],
+            "parallevar": false
+          },
+          {
+            "tipo": "napolitana",
+            "tamaño": "individual",
+            "precio": 6.78,
+            "toppings": [],
+            "parallevar": true
+          }
+        ];
+        console.log(ordenesDePizzas[0]),
+        console.log(ordenesDePizzas[2]);
+        console.log(ordenesDePizzas[0]["precio"]);
+        console.log(ordenesDePizzas[1].toppings[0]);
+
+        var miReceta = {
+          "descripcion": "mi postre favorito",
+          "costo": 15.6,
+          "ingredientes": {
+            "masa": {
+              "harina": " 100 grs",
+              "sal": "1 cucharadita",
+              "agua": "1 taza"
+            },
+            "cobertura": {
+              "azucar": "120 grs",
+              "chocolate": "4 cucharadas",
+              "manteca": "200 grs"
+            }
+          }
+        };
+        console.log(miReceta.descripcion);
+        console.log(miReceta.costo);
+        console.log(miReceta.ingredientes);
+        console.log(miReceta.ingredientes.masa);
+        console.log(miReceta.ingredientes.masa.agua);
+        console.log(miReceta["ingredientes"]["masa"]["agua"]);
+        console.log(miReceta.ingredientes.cobertura.chocolate);
+        
+        
+
+        
+
+
+
+
+
+
+
+      
+
+
+      
+
+
+    </script>
     
-  </script>
-  
-</body>
+  </body>
 </html>
