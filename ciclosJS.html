@@ -8,6 +8,7 @@
 </head>
 <body>
   <script>
+    /*
     //Ciclo While
     var i=0;
     while (i < 3){
@@ -35,8 +36,139 @@
     var miArreglo=[];
     for (var i = 0; i < 10; i+=2){
       miArreglo.push(i);
-    }dddddd
+    }
     console.log(miArreglo);
+
+    var miArreglo = [4, 6, 8, 2];
+    var total = 0;
+    for (var i=0; i < miArreglo.length; i++){
+      total +=miArreglo[i];
+      console.log ("iteracion "+i);
+      console.log(miArreglo[i]);
+    }
+    console.log (total);
+
+    var lenguajes=["JAvaScript", "Python", "Java", "c++"];
+    for (var i = 0; i < lenguajes.length; i++){
+      console.log(lenguajes[i].toUpperCase());
+    }
+
+    function contarNumerosPares(arreglo){
+      var total = 0;
+      for (var i = 0; i < arreglo.length; i++){
+        if (arreglo[i] %  2 == 0){
+          total++;
+        }
+
+      }
+      return total;
+    }
+    
+    //console.log(contarNumerosPares([5, 1, 2, 4, 6, 7]));
+
+    var miArreglo= [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+    for (var i=0; i < miArreglo.length; i++){
+      console.log("> Nueva Iteracion");
+      var arregloAnidado = miArreglo[i];
+      console.log("Arreglo: " + arregloAnidado);
+      for (var j=0; j < arregloAnidado.length; j++){
+        console.log(arregloAnidado[j]);
+      }
+        
+    }
+
+    // Ciclo do While, se usa cuando el usuario debe ingresar un valor...una vez se debe evaluar... 
+
+    //esto es While
+    var x = 16;
+    while (x < 10){
+      console.log("Con While "+x);
+      x++;
+    }
+
+    // esto es do while 
+    var x = 16;
+    do {
+      console.log("Con do While "+x);
+      x++;
+    }while (x < 10);
+
+    var contactos = [
+      {
+        "nombre": "Nora",
+        "apellido": "Nav",
+        "numero": "0543236543",
+        "gustos": ["Pizza", "Programacion"]
+      },
+      {
+        "nombre": "HArry",
+        "apellido": "Potter",
+        "numero": "0994732684",
+        "gustos": ["Hogwarts", "Magia"]
+
+      },
+      {
+        "nombre": "Sherlock",
+        "apellido": "Holmes",
+        "numero": "0487345643",
+        "gustos": ["Casos interesantes", "Violin"]
+      }
+    ];
+
+    function buscarPerfil (nombre, propiedad){
+      for (var i = 0; i < contactos.length; i++) {
+        if (contactos[i].nombre === nombre){
+          return contactos[i][propiedad] || "La propiedad no existe";
+        }
+        
+      }
+      return "El contacto no esta en la Lista";
+
+    }
+    console.log(buscarPerfil("Bob", "direccion"));
+
+    function generarFraccionAleatoria(){
+      return Math.random(); //retorna valor aleatorio entre [0, 1)
+
+    }
+    console.log(generarFraccionAleatoria());
+
+    //sin funcion 
+    console.log(Math.random()); 
+    */
+
+
+    //numero aleatorios
+    var numeroAleatorioEntre0y19 = Math.floor(Math.random()*50);
+    //console.log(numeroAleatorioEntre0y19);
+
+    function generaEnteroAleatorio(limiteSuperior){
+      return Math.floor(Math.random() * limiteSuperior);
+    }
+    
+    for (var i = 0; i < 15; i++) {
+      console.log (generaEnteroAleatorio(15000));
+
+    }
+
+    function rangoAleatorio(limiteInferior, limiteSuperior){
+      return Math.floor(Math.random() * (limiteSuperior - limiteInferior + 1))+limiteInferior;
+    }
+    console.log(rangoAleatorio(2, 8));
+    console.log(rangoAleatorio(2, 8));
+    console.log(rangoAleatorio(2, 8));
+    console.log(rangoAleatorio(2, 8));
+    console.log(rangoAleatorio(2, 8));
+
+
+
+
+
+
+
+
+
     
   </script>
 
@@ -47,3 +179,5 @@
 
 
 </html>
+
+

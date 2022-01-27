@@ -7,6 +7,7 @@
   </head>
   <body>
     <script>
+      
       var x=5;
       if (x>2){
         console.log("La condicion es verdadera");
@@ -26,7 +27,7 @@
       } else {
         console.log ("Hace frio")
       } 
-       /*function clasificarValor(valor){
+      function clasificarValor(valor){
          if (valor % 2 == 0){
            console.log ("Divisible entre 2.")
          }else if (valor % 3 == 0){
@@ -37,7 +38,7 @@
 
        }
        clasificarValor(27);
-       */
+       
        
        function interpretarIMC(indiceDeMasaCorporal){
          if (indiceDeMasaCorporal < 18.5){
@@ -64,179 +65,175 @@
           par + 2          "Double Bogey"
           >=par + 3        "Go Home!"
           */
+          
 
           
-          function clasificacionGolfista(par, golpes){
-            if (golpes == 1){
-              return "Hole-in-One!";
-            }else if(golpes <= par - 2 ){
-              return "Eagle";
-            }else if(golpes == par - 1){
-              return "Birdie";
-            }else if(golpes == par){
-              return "Par";
-            }else if (golpes == par + 1){
-              return "Bogey";
-            }else if (golpes == par + 2){
-              return "Double Bogey";
-            }else if (golpes >= par + 3){
-              return "GO Home!";
-            }
-          }
-          console.log (clasificacionGolfista(7, 1));
+      function clasificacionGolfista(par, golpes){
+        if (golpes == 1){
+          return "Hole-in-One!";
+        }else if(golpes <= par - 2 ){
+          return "Eagle";
+        }else if(golpes == par - 1){
+          return "Birdie";
+        }else if(golpes == par){
+          return "Par";
+        }else if (golpes == par + 1){
+          return "Bogey";
+        }else if (golpes == par + 2){
+          return "Double Bogey";
+        }else if (golpes >= par + 3){
+          return "GO Home!";
+        }
+      }
+      console.log (clasificacionGolfista(7, 1));
 
-          //------switch--------//
-          function clasificarValor(valor){
-            var respuesta;
-            switch (valor){
-              case 1:
-                respuesta="alpha";
-                break;
-              case 2:
-                respuesta="beta";
-                break;
-              case 3:
-                respuesta="gamma";
-                break;
-              case 4:
-                respuesta="delta";
-                break;
-            }
-            return respuesta;
-          }
-          console.log (clasificarValor(2));
+      //------switch--------//
+      function clasificarValor(valor){
+        var respuesta;
+        switch (valor){
+          case 1:
+            respuesta="alpha";
+            break;
+          case 2:
+            respuesta="beta";
+            break;
+          case 3:
+            respuesta="gamma";
+            break;
+          case 4:
+            respuesta="delta";
+            break;
+        }
+        return respuesta;
+      }
+      console.log (clasificarValor(2));
 
-          var producto = "pizza";
-          switch (producto) {
-            case "pizza":
-              console.log("La pizza de muzza cuesta $ 550");
-              break;
-            case "hamburguesa":
-              console.log("La hambueguesa cuesta $350");
-              break;
-            case "helado":
-              console.log("El helado cuesta $ 250");
-              break;
+      var producto = "pizza";
+      switch (producto) {
+        case "pizza":
+          console.log("La pizza de muzza cuesta $ 550");
+          break;
+        case "hamburguesa":
+          console.log("La hambueguesa cuesta $350");
+          break;
+        case "helado":
+          console.log("El helado cuesta $ 250");
+          break;
 
-          }
-           
-          function seleccionarIdioma(valor){
-            var idioma;
-            switch(valor) {
-              case 1:
-                idioma="Español";
-                break;
-              case 2:
-                idioma="Frances";
-                break;
-              case 3:
-                idioma="Italiano";
-                break;
-              default: //opcion por defecto cuando no hay otra opcion
-                idioma="Ingles";
-                break;
+      }
+        
+      function seleccionarIdioma(valor){
+        var idioma;
+        switch(valor) {
+          case 1:
+            idioma="Español";
+            break;
+          case 2:
+            idioma="Frances";
+            break;
+          case 3:
+            idioma="Italiano";
+            break;
+          default: //opcion por defecto cuando no hay otra opcion
+            idioma="Ingles";
+            break;
 
-            }
-            return idioma;
-          }
-          console.log(seleccionarIdioma(1));
+        }
+        return idioma;
+      }
+      console.log(seleccionarIdioma(1));
+  
+      function clasificarVolumen(valor){
+        var volumen;
+        switch(valor){
+          case 1:
+            volumen="bajo";
+            break;
+          case 2: 
+          case 3: 
+            volumen ="intermedio";
+            break;
+          case 4: 
+          case 5: 
+          case 6: 
+            volumen ="alto";
+            break;
+
+        }
+        return volumen;
+
+      }
+      console.log(clasificarVolumen(2));
+
+      //funcion boolena
+
+      function esMenorQue(a,b){
+        //todo el if se puede reemplazar por una sola linea
+        if (a < b){ t
+          return true;
+        }else {
+          return false;
+        } 
+        return (a < b);
+      }
+      console.log(esMenorQue(1,2));
+
+      function miFuncion(){
+        console.log("Hola");
+        return "Mundo";
+        console.log("Adios");
+      }
+      console.log(miFuncion());
+
+      function calcularRaizCuadrada(numero){
+        if (numero < 0){
+          return undefined;
+        }
+        return Math.sqrt(numero);
+      }
+      console.log(calcularRaizCuadrada(144));
+
+       /*BlackJAck
+      +1     2, 3, 4, 5, 6
+      0      7, 8, 9
+      -1     10, J, Q, K, A
+      */
       
-          function clasificarVolumen(valor){
-            var volumen;
-            switch(valor){
-              case 1:
-                volumen="bajo";
-                break;
-              case 2: 
-              case 3: 
-                volumen ="intermedio";
-                break;
-              case 4: 
-              case 5: 
-              case 6: 
-                volumen ="alto";
-                break;
+      var conteo=0;
+      function contarCartas (carta){
+        var desicion;
+        switch (carta){
+          case 2:
+          case 3:
+          case 4:
+          case 5:
+          case 6:
+            conteo ++;
+            break;
+          case 10:
+          case "J":
+          case "Q":
+          case "K":
+          case "A":
+            conteo --;
+            break;
 
-            }
-            return volumen;
+        }
+        if (conteo > 0){
+          return conteo +" " + "Apostar ";
+        }else {
+          return conteo + " " + "Esperar ";
+        }
 
-          }
-          console.log(clasificarVolumen(2));
-
-          //funcion boolena
-
-          function esMenorQue(a,b){
-            /* odo el if se puede reemplazar por una sola linea
-            if (a < b){ t
-              return true;
-            }else {
-              return false;
-            } */
-            return (a < b);
-          }
-          console.log(esMenorQue(1,2));
-
-          function miFuncion(){
-            console.log("Hola");
-            return "Mundo";
-            console.log("Adios");
-          }
-          console.log(miFuncion());
-
-          function calcularRaizCuadrada(numero){
-            if (numero < 0){
-              return undefined;
-            }
-            return Math.sqrt(numero);
-          }
-          console.log(calcularRaizCuadrada(144));
-
-          /* BlackJAck
-          +1     2, 3, 4, 5, 6
-          0      7, 8, 9
-          -1     10, J, Q, K, A
-          */
-          var conteo=0;
-          function contarCartas (carta){
-            var desicion;
-            switch (carta){
-              case 2:
-              case 3:
-              case 4:
-              case 5:
-              case 6:
-                conteo ++;
-                break;
-              case 10:
-              case "J":
-              case "Q":
-              case "K":
-              case "A":
-                conteo --;
-                break;
-
-            }
-            if (conteo > 0){
-              return conteo +" " + "Apostar ";
-            }else {
-              return conteo + " " + "Esperar ";
-            }
-
-          }
-          console.log(contarCartas(2));
-          console.log(contarCartas(3));
-          console.log(contarCartas(7));
-          console.log(contarCartas("K"));
-          console.log(contarCartas("A"));
-          console.log(contarCartas("A"));
-          console.log(contarCartas(2));
-          console.log(contarCartas(2));
-
-
-
-
-
-
+      }
+      console.log(contarCartas(2));
+      console.log(contarCartas(3));
+      console.log(contarCartas(7));
+      console.log(contarCartas("K"));
+      console.log(contarCartas("A"));
+      console.log(contarCartas("A"));
+      console.log(contarCartas(2));
+      console.log(contarCartas(2));
 
 
 
