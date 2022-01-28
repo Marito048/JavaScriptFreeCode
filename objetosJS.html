@@ -156,7 +156,21 @@
         console.log(miReceta["ingredientes"]["masa"]["agua"]);
         console.log(miReceta.ingredientes.cobertura.chocolate);
         
+        //OBJETO INMUTABLE
+        let colores = {
+          "verde"  :  "#10e04b",
+          "azul"   :  "#1b50e0",
+          "negro"  :  "#000000",
+          "blanco" :  "#ffffff" 
+        };
+        Object.freeze(colores);//congela el objeto
+        colores.amarillo= "#fff200"; //error
+        delete colores.verde //error
+        console.log(colores);
         
+
+
+
 
         
 

@@ -98,6 +98,51 @@
   console.log("Despues: " + JSON.stringify(arreglo));
   
 
+  //funciones flecha
+  /*asi seria
+  const fecha = function(){
+    return new Date();
+  };
+  */
+ const fecha = () => new Date(); //funcion flecha
+
+ /*const sumarTres = function(x){
+   return x + 3;
+ }*/
+ // se convierte en flecha asi:
+
+ const sumarTres =(x) => x + 3;
+ console.log(sumarTres(4));
+
+ const concatenar = (arreglo1, arreglo2) => arreglo1.concat(arreglo2);
+ console.log(concatenar([1, 2],[3, 4, 5]));
+
+ const sumarnum = (a, b) => {
+   let num = 6;
+   return a+ b +num;
+
+ };
+ console.log(sumarnum(1,1));
+
+ const incrementar = (numero, valor = 1) => numero + valor; 
+ console.log(incrementar(5));
+ console.log(incrementar(5, 3));
+ 
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
 
 
 

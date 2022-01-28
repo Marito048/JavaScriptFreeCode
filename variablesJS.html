@@ -112,6 +112,66 @@
       console.log(listaDeEstudiantes);
       var listaDePrecios=[["Camisa", 5.67, "S134"],["Celular", 250, "S356"], ["Zapato", 36.7, "S678"]];
       console.log(listaDePrecios);
+
+      //VAR VS LET
+      var campista ="James"; 
+      var campista = "David"; //con var se puede declarar varias veces la misma variable
+ 
+      /*
+      let campista= "James"; //con let no se puede declarar varias veces
+      let campista = "David"; 
+      */
+
+      console.log(campista);
+
+      //ambito de var y let
+      //var local o global
+      //global 
+      var miVariableGlobal = 4;
+      console.log(miVariableGlobal);
+      function miFuncion(){
+        console.log(miVariableGlobal);
+        var miVariableLocal = 8;
+        console.log(miVariableLocal);
+      }
+      miFuncion();
+      console.log(miVariableGlobal);
+      //console.log(miVariableLocal); //error, no es global
+
+      //let se utiliza para declarar variables en un bloque por ej en el for
+
+      for(let i = 0; i < 3; i++){
+        console.log(i);
+      }
+      //console.log("Variable :" + i); //error
+
+      //CONST
+
+      const MI_CONSTANTE = 35; 
+      
+      function calcularAreaCirculo(radio){
+        const PI = 3.14;
+        return radio > 0 ? PI * (radio ** 2): undefined;
+      }
+      console.log(calcularAreaCirculo(5));
+
+      const MI_ARREGLO = [1, 2, 3, 4];
+      //MI_ARREGLO = [5, 6, 7, 8]; //ERROR
+      MI_ARREGLO[0]=5;
+      MI_ARREGLO[1]=6;
+      MI_ARREGLO[2]=7;
+      MI_ARREGLO[3]=8;
+      console.log(MI_ARREGLO); 
+      
+
+
+
+
+
+
+
+
+
       
 
 
